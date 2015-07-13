@@ -1,0 +1,8 @@
+#main-page-head {
+    background: url(../imgs/pour-concrete.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
