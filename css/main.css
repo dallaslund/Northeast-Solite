@@ -1,8 +1,287 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+html {
+  font-family: 'Open Sans', sans-serif;
+}
 #main-page-head {
-    background: url(../imgs/pour-concrete.jpg) no-repeat center center; 
+    background: url(../imgs/pour-concrete-dark.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+.logo {
+  background: url(../imgs/solitelogo1.png) no-repeat center center;
+  width: 314;
+  background-size: cover;
+  position: absolute;
+  height: 110px;
+  margin-top: 70px;
+  margin-left: 30px;
+}
+#first-half {
+  background: url(../imgs/capitaldome2.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+#second-half {
+  background: url(../imgs/shutterstock_47460910.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#main-nav a:hover, #main-nav a:active {
+  border-bottom: 1px solid #fff;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+}
+body {
+    margin: 0;
+}
+.uppercase {
+  text-transform: uppercase; 
+}
+div#main-nav {
+    width: 880px;
+    float: right;
+    margin-top: 110px;
+}
 
+#main-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 23px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+  font-weight: 600;
+}
+
+#main-caption {
+    width: 520px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 40px;
+    position: absolute;
+    margin-top: 340px;
+}
+
+#main-caption p {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p#first-text-neck {
+    font-weight: 600;
+}
+
+p#first-text-neck #second-text-neck {}
+
+#first-text-neck, #second-text-neck {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.section-title {
+  width: 100%;
+  background-color: #5D5DEE;
+  height: 50px;
+  color: #FFF;
+  margin-bottom: 20px;
+  -moz-box-shadow: 0px 3px 1px 0px #888;
+  -webkit-box-shadow: 0px 3px 1px 0px #888;
+  box-shadow: 0px 3px 1px 0px #888;
+}
+
+.section-title p {
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+div#solite {
+
+}
+
+div#hydrocure {
+  
+}
+
+.application-section {
+    clear: both;
+    padding-top: 10px;
+}
+
+.products-section {
+  
+}
+
+.sustainability-section {
+    padding-top: 10px;
+    height: 500px;
+}
+
+.third {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 30%;
+    float: left;
+    height: 220px;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+
+.fourth-box {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 21%;
+    height: 100%;
+    /* position: absolute; */
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.fourth-container {
+    width: 100%;
+    height: 233px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.half {
+    width: 45%;
+    height: 420px;
+    float: left;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+div#half-caption {
+    background-color: rgba(0,0,0,0.5);
+    /* position: absolute; */
+    margin-top: 360px;
+    /* bottom: 0; */
+    /* width: 490px; */
+    /* padding-bottom: 8px; */
+}
+
+#half-caption p {
+    color: #fff;
+    padding-left: 10px;
+}
+
+#half-caption a {
+    padding-left: 10px;
+    color: fff;
+    margin-bottom: 5px;
+}
+.footer {
+    background-color: #5D5DEE;
+    padding: 10px 10px 10px 10px;
+}
+
+.footer p, .footer a {
+  color: #FFF;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.quote-box p {
+    text-align: -webkit-center;
+    padding-top: 10px;
+    color: #fff;
+}
+
+.quote-box {
+    background-color: #5D5DEE;
+    height: 40px;
+}
+
+.quote-box a {
+    color: #fff;
+}
+div#neck-text {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#first-third-img {
+  background: url(../imgs/aridos-5.jpg) no-repeat center center;
+  width: 24%;
+  height: 220px;
+  z-index: -999;
+  position: absolute;
+  margin-top: -22px;
+}
+#second-third-img {
+  background: url(../imgs/aridos-5.jpg) no-repeat center center;
+  width: 24%;
+  height: 220px;
+  z-index: -999;
+  position: absolute;
+  margin-top: -22px;
+}
+#third-third-img {
+  background: url(../imgs/aridos-5.jpg) no-repeat center center;
+  width: 24%;
+  height: 220px;
+  z-index: -999;
+  position: absolute;
+  margin-top: -22px;
+}
+.third p {
+  color: #FFF;
+  position: absolute;
+  margin-top: 170px;
+  margin-left: 10px;
+}
+#first-fourth-img {
+  background: url(../imgs/aridos-5.jpg) no-repeat center center;
+  width: 16.8%;
+  height: 233px;
+  z-index: -999;
+  position: absolute;
+}
+#second-fourth-img {
+  background: url(../imgs/aridos-5.jpg) no-repeat center center;
+  width: 16.8%;
+  height: 233px;
+  z-index: -999;
+  position: absolute;
+}
+#third-fourth-img {
+  background: url(../imgs/aridos-5.jpg) no-repeat center center;
+  width: 16.8%;
+  height: 233px;
+  z-index: -999;
+  position: absolute;
+}
+#fourth-fourth-img {
+  background: url(../imgs/aridos-5.jpg) no-repeat center center;
+  width: 16.8%;
+  height: 233px;
+  z-index: -999;
+  position: absolute;
+}
+.fourth-box p {
+  color: #FFF;
+  position: absolute;
+  margin-top: 180px;
+  margin-left: 10px;
+}
