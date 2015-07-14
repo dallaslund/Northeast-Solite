@@ -34,7 +34,7 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
-#main-nav a:hover, #main-nav a:active {
+#main-nav a:hover {
   border-bottom: 1px solid #fff;
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
@@ -211,6 +211,9 @@ div#half-caption {
 .quote-box {
     background-color: #5D5DEE;
     height: 40px;
+    -moz-box-shadow: 0px 3px 1px 0px #888;
+    -webkit-box-shadow: 0px 3px 1px 0px #888;
+    box-shadow: 0px 3px 1px 0px #888;
 }
 
 .quote-box a {
@@ -284,4 +287,7 @@ div#neck-text {
   position: absolute;
   margin-top: 180px;
   margin-left: 10px;
+}
+.footer p {
+  padding-left: 15px;
 }
