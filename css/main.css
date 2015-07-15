@@ -2,6 +2,14 @@
 html {
   font-family: 'Open Sans', sans-serif;
 }
+/*
+.din-font {
+  font-family: 'din-condensed-web', sans-serif;
+}
+.proxima-font {
+  font-family: 'Proxima Nova', sans-serif; 
+}
+*/
 #main-page-head {
     background: url(../imgs/pour-concrete-dark.jpg) no-repeat center center; 
   -webkit-background-size: cover;
@@ -13,12 +21,12 @@ html {
 }
 .logo {
   background: url(../imgs/solitelogo1.png) no-repeat center center;
-  width: 314;
+  width: 100px;
   background-size: cover;
-  position: absolute;
-  height: 110px;
-  margin-top: 70px;
-  margin-left: 30px;
+  height: 30px;
+  float: left;
+  display: inline-block;
+  padding-bottom: 1px;
 }
 #first-half {
   background: url(../imgs/capitaldome2.jpg) no-repeat center center;
@@ -35,7 +43,7 @@ html {
   background-size: cover;
 }
 #main-nav a:hover {
-  border-bottom: 1px solid #fff;
+  border-bottom: 2px solid #000;
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   -o-transition: all .5s ease;
@@ -49,14 +57,26 @@ body {
   text-transform: uppercase; 
 }
 div#main-nav {
-    width: 880px;
-    float: right;
-    margin-top: 110px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
-
+.nav-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  height: 53px;
+}
+.logo-nav {
+  float: left;
+}
+.left-nav, .right-nav {
+  width: calc((100% - 170px)/2);
+  float: left;
+  text-align: -webkit-center;
+}
 #main-nav a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     font-size: 23px;
     margin-left: 25px;
     margin-right: 25px;
@@ -67,7 +87,8 @@ div#main-nav {
   -o-transition: all .5s ease;
   -ms-transition: all .5s ease;
   transition: all .5s ease;
-  font-weight: 600;
+  font-weight: 100;
+  display: inline-block;
 }
 
 #main-caption {
@@ -75,7 +96,7 @@ div#main-nav {
     background-color: rgba(0, 0, 0, 0.5);
     height: 40px;
     position: absolute;
-    margin-top: 340px;
+    margin-top: 290px;
 }
 
 #main-caption p {
@@ -86,7 +107,7 @@ div#main-nav {
 }
 
 .content {
-    width: 80%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -142,21 +163,20 @@ div#hydrocure {
 
 .third {
     background-color: rgba(0, 0, 0, 0.3);
-    width: 30%;
+    width: 31%;
     float: left;
     height: 220px;
-    margin-left: 1.5%;
-    margin-right: 1.5%;
+    margin-left: 1%;
 }
 
 .fourth-box {
     background-color: rgba(0, 0, 0, 0.3);
-    width: 21%;
+    width: 22.4%;
     height: 100%;
     /* position: absolute; */
     float: left;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 .fourth-container {
@@ -176,7 +196,8 @@ div#hydrocure {
 div#half-caption {
     background-color: rgba(0,0,0,0.5);
     /* position: absolute; */
-    margin-top: 360px;
+    margin-top: 339px;
+    height: 81px;
     /* bottom: 0; */
     /* width: 490px; */
     /* padding-bottom: 8px; */
@@ -226,7 +247,7 @@ div#neck-text {
 }
 #first-third-img {
   background: url(../imgs/aridos-5.jpg) no-repeat center center;
-  width: 24%;
+  width: 23.2%;
   height: 220px;
   z-index: -999;
   position: absolute;
@@ -234,7 +255,7 @@ div#neck-text {
 }
 #second-third-img {
   background: url(../imgs/aridos-5.jpg) no-repeat center center;
-  width: 24%;
+  width: 23.2%;
   height: 220px;
   z-index: -999;
   position: absolute;
@@ -242,7 +263,7 @@ div#neck-text {
 }
 #third-third-img {
   background: url(../imgs/aridos-5.jpg) no-repeat center center;
-  width: 24%;
+  width: 23.2%;
   height: 220px;
   z-index: -999;
   position: absolute;
