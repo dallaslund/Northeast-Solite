@@ -2,16 +2,33 @@
   <head>
 	<title>NorthEast Solite</title>
 	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive-nav.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <style>
       #products-a {
         border-bottom: 1px solid #fff !important;
       }
     </style>
+    <link rel="stylesheet" href="css/responsive-nav.css">
+    <script type="text/javascript">
+      $(document).on("scroll",function(){
+          if($(document).scrollTop()>100){
+              $("header").addClass("smaller-nav");
+              $("header").addClass("smaller-nav #main-nav .left-nav a");
+              $("header").addClass("smaller-nav #main-nav .right-nav a");
+              $("header").addClass("smaller-nav #main-nav .logo-nav");
+              $("header").addClass("smaller-nav #main-nav .left-nav");
+              $("header").addClass("smaller-nav #main-nav .right-nav");
+          } else{
+              $("header").removeClass("smaller-nav");
+          }
+      });
+    </script>
   </head>
   <body>
     <div class="overlay">
       <div class="head" id="main-page-head">
-        <div class="nav-container">
+        <header class="nav-container">
           <div class="nav" id="main-nav">
             <div class="left-nav">
               <a class="uppercase" id="products-a" href="products.html">Products</a>
@@ -25,7 +42,7 @@
               <a class="uppercase" id="about-a" href="about.html">About</a>
             </div>
           </div>
-        </div>
+        </header>
         <div class="uppercase" class="caption" id="main-caption"><p>Lightest, Most Durable Concrete filler since 1947</p></div>
       </div>
     </div>

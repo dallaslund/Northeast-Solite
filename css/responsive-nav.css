@@ -1,0 +1,49 @@
+.left-nav, .right-nav, .logo-nav {
+  margin-top: 15px;
+}
+/*put this in the main.css when finished*/
+  .nav-container {
+    height: 85px !important;
+    margin-top: -85px;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+  } 
+  div#main-page-logo a, div#main-page-logo a:active {
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+  }
+  .logo {
+/*      width: 115px !important;*/
+  }
+  .left-nav, .right-nav {
+    width: calc((100% - 185px) /2); 
+  }
+  .overlay {
+    margin-top: 85px;
+  }
+
+/*  Responsive menu  */
+header.smaller-nav {
+  height: 40px !important;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+}
+header.smaller-nav #main-nav .left-nav a, header.smaller-nav #main-nav .right-nav a {
+  font-size: 14px;
+  width: calc((100% - 145px) /2);
+}
+header.smaller-nav #main-nav .logo-nav a .logo {
+  height: 18px !important;
+  width: 75px !important;
+}
+header.smaller-nav .left-nav, header.smaller-nav .right-nav {
+  width: calc((100% - 145px) /2);
+}
+header.smaller-nav #main-nav .left-nav, header.smaller-nav #main-nav .right-nav, header.smaller-nav #main-nav .logo-nav {
+  margin-top: 0 !important; 
+}
