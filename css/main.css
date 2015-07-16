@@ -53,7 +53,7 @@
   }
 
 /* Menu Styling */
-  #main-nav a:hover {
+  #main-nav .left-nav a:hover, #main-nav .right-nav a:hover {
     border-bottom: 2px solid #000;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
@@ -75,6 +75,7 @@
   }
   .logo-nav {
     float: left;
+    width: 145px;
   }
   .left-nav, .right-nav {
     width: calc((100% - 170px)/2);
@@ -84,7 +85,8 @@
   #main-nav a {
     text-decoration: none;
     color: #000;
-    font-size: 23px;
+    font-size: 15px;
+    letter-spacing: 1px;
     margin-left: 25px;
     margin-right: 25px;
     padding: 10px;
@@ -96,6 +98,7 @@
     transition: all .5s ease;
     font-weight: 100;
     display: inline-block;
+    width: 130px;
   }
   .nav-container {
     height: 85px !important;
@@ -107,7 +110,7 @@
     transition: all .5s ease;
   } 
   .left-nav, .right-nav {
-    width: calc((100% - 185px) /2); 
+    width: calc((100% - 145px) /2); 
   }
 
 
@@ -122,7 +125,7 @@
     margin-left: 2.5%;
     margin-right: 2.5%;
   }
-  .half-caption-products {
+  .half-caption-prod {
     background-color: rgba(0,0,0,0.5) !important;
     margin-top: 158px !important;
     height: 81px !important;
@@ -237,7 +240,7 @@
   }
   div#half-caption {
     background-color: rgba(0, 0, 0, 0.5);
-    margin-top: 158px;
+    margin-top: 339px;
     height: 81px;
   }
   #half-caption p {
