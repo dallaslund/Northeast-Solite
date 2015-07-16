@@ -1,29 +1,6 @@
 .left-nav, .right-nav, .logo-nav {
   margin-top: 15px;
 }
-/*put this in the main.css when finished*/
-  .nav-container {
-    height: 85px !important;
-    margin-top: -85px;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  transition: all .5s ease;
-  } 
-  div#main-page-logo a, div#main-page-logo a:active {
-    border-bottom: 1px solid rgba(255, 255, 255, 0);
-  }
-  .logo {
-/*      width: 115px !important;*/
-  }
-  .left-nav, .right-nav {
-    width: calc((100% - 185px) /2); 
-  }
-  .overlay {
-    margin-top: 85px;
-  }
-
 /*  Responsive menu  */
 header.smaller-nav {
   height: 40px !important;
