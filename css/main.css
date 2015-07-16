@@ -1,82 +1,87 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
-html {
-  font-family: 'Open Sans', sans-serif;
-}
-/*
-.din-font {
-  font-family: 'din-condensed-web', sans-serif;
-}
-.proxima-font {
-  font-family: 'Proxima Nova', sans-serif; 
-}
-*/
-#main-page-head {
-    background: url(../imgs/pour-concrete-dark.jpg) no-repeat center center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  height: 400px;
-}
-.logo {
-  background: url(../imgs/solitelogo1.png) no-repeat center center;
-  width: 100px;
-  background-size: cover;
-  height: 30px;
-  float: left;
-  display: inline-block;
-  padding-bottom: 1px;
-}
-#first-half {
-  background: url(../imgs/capitaldome2.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#second-half {
-  background: url(../imgs/shutterstock_47460910.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#main-nav a:hover {
-  border-bottom: 2px solid #000;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  transition: all .5s ease;
-}
-body {
+/* Body Styling */
+  @import url(http://goo.gl/CGxexN);
+  html {
+    font-family: 'Open Sans', sans-serif;
+  }
+  body {
     margin: 0;
-}
-.uppercase {
-  text-transform: uppercase; 
-}
-div#main-nav {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.nav-container {
-  background-color: rgba(255, 255, 255, 0.9);
-  width: 100%;
-  height: 53px;
-  position: fixed;
-  z-index: 2;
-}
-.logo-nav {
-  float: left;
-}
-.left-nav, .right-nav {
-  width: calc((100% - 170px)/2);
-  float: left;
-  text-align: -webkit-center;
-}
-#main-nav a {
+  }
+  .content {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-title {
+    width: 100%;
+    background-color: #5D5DEE;
+    height: 50px;
+    color: #FFF;
+    margin-bottom: 20px;
+    -moz-box-shadow: 0px 3px 1px 0px #888;
+    -webkit-box-shadow: 0px 3px 1px 0px #888;
+    box-shadow: 0px 3px 1px 0px #888;
+  }
+  .section-title p {
+    padding-left: 20px;
+    padding-top: 15px;
+  }
+  .application-section {
+    clear: both;
+    padding-top: 10px;
+  }
+  .sustainability-section {
+    padding-top: 10px;
+    height: 500px;
+  }
+  .uppercase {
+    text-transform: uppercase; 
+  }
+  .quote-box p {
+    text-align: -webkit-center;
+    padding-top: 10px;
+    color: #fff;
+  }
+  .quote-box {
+    background-color: #5D5DEE;
+    height: 40px;
+    -moz-box-shadow: 0px 3px 1px 0px #888;
+    -webkit-box-shadow: 0px 3px 1px 0px #888;
+    box-shadow: 0px 3px 1px 0px #888;
+  }
+  .quote-box a {
+    color: #fff;
+  }
+
+/* Menu Styling */
+  #main-nav a:hover {
+    border-bottom: 2px solid #000;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  div#main-nav {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 53px;
+    position: fixed;
+    z-index: 2;
+  }
+  .logo-nav {
+    float: left;
+  }
+  .left-nav, .right-nav {
+    width: calc((100% - 170px)/2);
+    float: left;
+    text-align: -webkit-center;
+  }
+  #main-nav a {
     text-decoration: none;
     color: #000;
     font-size: 23px;
@@ -84,95 +89,214 @@ div#main-nav {
     margin-right: 25px;
     padding: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0);
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  transition: all .5s ease;
-  font-weight: 100;
-  display: inline-block;
-}
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    font-weight: 100;
+    display: inline-block;
+  }
+  .nav-container {
+    height: 85px !important;
+    margin-top: -85px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+  } 
+  .left-nav, .right-nav {
+    width: calc((100% - 185px) /2); 
+  }
 
-#main-caption {
+
+/* Page Specific Styling */
+
+  /* Product Page */
+  .stone-image {
+    background: url("../imgs/shutterstock_47460910.jpg");
+    width: 100%;
+    height: 239px;
+    float: left;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+  .half-caption-products {
+    background-color: rgba(0,0,0,0.5) !important;
+    margin-top: 158px !important;
+    height: 81px !important;
+    padding-bottom !important: 8px; 
+  }
+  #sustain-title-products {
+    text-indent: 33px;
+  }
+  #applications-list {
+    list-style-type: none;
+  }
+  .sustainability-section-products {
+    float: left;
+  }
+  div#sustainability-products {
+    width: 45%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    display: inline-block;
+    padding-bottom: 30px;
+    padding-top: 10px;
+  }
+  div#application-section-products {
+    width: 45%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    float: right;
+    display: inline-block;
+    padding-top: 10px;
+  }
+
+
+/* Head Styling */
+  #main-page-head {
+    background: url(../imgs/pour-concrete-dark.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+  }
+  .logo {
+    background: url(../imgs/solitelogo1.png) no-repeat center center;
+    width: 100px;
+    background-size: cover;
+    height: 30px;
+    float: left;
+    display: inline-block;
+    padding-bottom: 1px;
+  }
+  div#main-page-logo a, div#main-page-logo a:active {
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+  }
+  .overlay {
+    margin-top: 85px;
+  }
+  #main-caption {
     width: 520px;
     background-color: rgba(0, 0, 0, 0.5);
     height: 40px;
     position: absolute;
     margin-top: 290px;
     z-index: 0;
-}
-
-#main-caption p {
+  }
+  #main-caption p {
     color: #fff;
     font-size: 18px;
     margin-top: 10px;
     padding-left: 20px;
-}
+  }
 
-.content {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-p#first-text-neck {
+/* Neck Styling */
+  p#first-text-neck {
     font-weight: 600;
-}
-
-p#first-text-neck #second-text-neck {}
-
-#first-text-neck, #second-text-neck {
+  }
+  #first-text-neck, #second-text-neck {
     font-size: 18px;
     font-weight: 100;
-}
+  }
+  div#neck-text {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.section-title {
-  width: 100%;
-  background-color: #5D5DEE;
-  height: 50px;
-  color: #FFF;
-  margin-bottom: 20px;
-  -moz-box-shadow: 0px 3px 1px 0px #888;
-  -webkit-box-shadow: 0px 3px 1px 0px #888;
-  box-shadow: 0px 3px 1px 0px #888;
-}
 
-.section-title p {
-  padding-left: 20px;
-  padding-top: 15px;
-}
-
-div#solite {
-
-}
-
-div#hydrocure {
+/* General Styling */
   
-}
+  /* Half Styling */
+  #first-half {
+    background: url(../imgs/capitaldome2.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  #second-half {
+    background: url(../imgs/shutterstock_47460910.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .half {
+    width: 45%;
+    height: 420px;
+    float: left;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+  div#half-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 158px;
+    height: 81px;
+  }
+  #half-caption p {
+    color: #fff;
+    padding-left: 10px;
+  }
+  #half-caption a {
+    padding-left: 10px;
+    color: fff;
+    margin-bottom: 5px;
+  }
 
-.application-section {
-    clear: both;
-    padding-top: 10px;
-}
-
-.products-section {
-  
-}
-
-.sustainability-section {
-    padding-top: 10px;
-    height: 500px;
-}
-
-.third {
+  /* Third Styling */
+  .third {
     background-color: rgba(0, 0, 0, 0.3);
     width: 31%;
     float: left;
     height: 220px;
     margin-left: 1%;
-}
-
-.fourth-box {
+  }
+  #first-third-img {
+    background: url(../imgs/aridos-5.jpg) no-repeat center center;
+    width: 23.2%;
+    height: 220px;
+    z-index: -999;
+    position: absolute;
+    margin-top: -22px;
+  }
+  #second-third-img {
+    background: url(../imgs/aridos-5.jpg) no-repeat center center;
+    width: 23.2%;
+    height: 220px;
+    z-index: -999;
+    position: absolute;
+    margin-top: -22px;
+  }
+  #third-third-img {
+    background: url(../imgs/aridos-5.jpg) no-repeat center center;
+    width: 23.2%;
+    height: 220px;
+    z-index: -999;
+    position: absolute;
+    margin-top: -22px;
+  }
+  .third p {
+    color: #FFF;
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 10px;
+  }
+  
+  /* Fourth Styling */
+  .fourth-container {
+    width: 100%;
+    height: 233px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  .fourth-box {
     background-color: rgba(0, 0, 0, 0.3);
     width: 22.4%;
     height: 100%;
@@ -180,203 +304,53 @@ div#hydrocure {
     float: left;
     margin-left: 1%;
     margin-right: 1%;
-}
-
-.fourth-container {
-    width: 100%;
+  }
+  #first-fourth-img {
+    background: url(../imgs/aridos-5.jpg) no-repeat center center;
+    width: 16.8%;
     height: 233px;
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
+    z-index: -999;
+    position: absolute;
+  }
+  #second-fourth-img {
+    background: url(../imgs/aridos-5.jpg) no-repeat center center;
+    width: 16.8%;
+    height: 233px;
+    z-index: -999;
+    position: absolute;
+  }
+  #third-fourth-img {
+    background: url(../imgs/aridos-5.jpg) no-repeat center center;
+    width: 16.8%;
+    height: 233px;
+    z-index: -999;
+    position: absolute;
+  }
+  #fourth-fourth-img {
+    background: url(../imgs/aridos-5.jpg) no-repeat center center;
+    width: 16.8%;
+    height: 233px;
+    z-index: -999;
+    position: absolute;
+  }
+  .fourth-box p {
+    color: #FFF;
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 10px;
+  }
 
-.half {
-    width: 45%;
-    height: 420px;
-    float: left;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-}
-div#half-caption {
-  background-color: rgba(0, 0, 0, 0.5);
-  /* position: absolute; */
-  margin-top: 158px;
-  height: 81px;
-  /* bottom: 0; */
-  /* width: 490px; */
-  /* padding-bottom: 8px; */
-}
 
-#half-caption p {
-    color: #fff;
-    padding-left: 10px;
-}
-
-#half-caption a {
-    padding-left: 10px;
-    color: fff;
-    margin-bottom: 5px;
-}
-.footer {
+/* Footer Styling*/
+  .footer {
     background-color: #5D5DEE;
     padding: 10px 10px 10px 10px;
-}
-
-.footer p, .footer a {
-  color: #FFF;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-.quote-box p {
-    text-align: -webkit-center;
-    padding-top: 10px;
-    color: #fff;
-}
-
-.quote-box {
-    background-color: #5D5DEE;
-    height: 40px;
-    -moz-box-shadow: 0px 3px 1px 0px #888;
-    -webkit-box-shadow: 0px 3px 1px 0px #888;
-    box-shadow: 0px 3px 1px 0px #888;
-}
-
-.quote-box a {
-    color: #fff;
-}
-div#neck-text {
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-}
-#first-third-img {
-  background: url(../imgs/aridos-5.jpg) no-repeat center center;
-  width: 23.2%;
-  height: 220px;
-  z-index: -999;
-  position: absolute;
-  margin-top: -22px;
-}
-#second-third-img {
-  background: url(../imgs/aridos-5.jpg) no-repeat center center;
-  width: 23.2%;
-  height: 220px;
-  z-index: -999;
-  position: absolute;
-  margin-top: -22px;
-}
-#third-third-img {
-  background: url(../imgs/aridos-5.jpg) no-repeat center center;
-  width: 23.2%;
-  height: 220px;
-  z-index: -999;
-  position: absolute;
-  margin-top: -22px;
-}
-.third p {
-  color: #FFF;
-  position: absolute;
-  margin-top: 170px;
-  margin-left: 10px;
-}
-#first-fourth-img {
-  background: url(../imgs/aridos-5.jpg) no-repeat center center;
-  width: 16.8%;
-  height: 233px;
-  z-index: -999;
-  position: absolute;
-}
-#second-fourth-img {
-  background: url(../imgs/aridos-5.jpg) no-repeat center center;
-  width: 16.8%;
-  height: 233px;
-  z-index: -999;
-  position: absolute;
-}
-#third-fourth-img {
-  background: url(../imgs/aridos-5.jpg) no-repeat center center;
-  width: 16.8%;
-  height: 233px;
-  z-index: -999;
-  position: absolute;
-}
-#fourth-fourth-img {
-  background: url(../imgs/aridos-5.jpg) no-repeat center center;
-  width: 16.8%;
-  height: 233px;
-  z-index: -999;
-  position: absolute;
-}
-.fourth-box p {
-  color: #FFF;
-  position: absolute;
-  margin-top: 180px;
-  margin-left: 10px;
-}
-.footer p {
-  padding-left: 15px;
-}
-
-/*Product Page*/
-
-.stone-image {
-  background: url("../imgs/shutterstock_47460910.jpg");
-  width: 100%;
-  height: 239px;
-  float: left;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-}
-
-.half-caption-products {
-  background-color: rgba(0,0,0,0.5) !important;
-  margin-top: 158px !important;
-  height: 81px !important;
-  padding-bottom !important: 8px; 
-}
-
-#sustain-title-products {
-    text-indent: 33px;
-}
-
-#applications-list {
-    list-style-type: none;
-}
-
-.sustainability-section-products {
-    float: left;
-}
-div#sustainability-products {
-    width: 45%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    display: inline-block;
-    padding-bottom: 30px;
-    padding-top: 10px;
-}
-
-div#application-section-products {
-    width: 45%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    float: right;
-    display: inline-block;
-    padding-top: 10px;
-}
-.nav-container {
-  height: 85px !important;
-  margin-top: -85px;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  transition: all .5s ease;
-} 
-div#main-page-logo a, div#main-page-logo a:active {
-  border-bottom: 1px solid rgba(255, 255, 255, 0);
-}
-.left-nav, .right-nav {
-  width: calc((100% - 185px) /2); 
-}
-.overlay {
-  margin-top: 85px;
-}
+  }
+  .footer p, .footer a {
+    color: #FFF;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  .footer p {
+    padding-left: 15px;
+  }
