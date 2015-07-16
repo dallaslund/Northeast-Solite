@@ -315,3 +315,34 @@ div#neck-text {
 .footer p {
   padding-left: 15px;
 }
+
+/*Product Page*/
+
+.stone-image {
+  width: 42%;
+  height: 239px;
+  float: left;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+.half-caption-products {
+  background-color: rgba(0,0,0,0.5) !important;
+  margin-top: 158px !important;
+  height: 81px !important;
+  bottom: 0 !important; 
+  width: 425px !important; 
+  padding-bottom !important: 8px; 
+}
+
+#sustain-title-products {
+    text-indent: 33px;
+}
+
+#applications-list {
+    list-style-type: none;
+}
+
+.sustainability-section-products {
+    float: left;
+}
