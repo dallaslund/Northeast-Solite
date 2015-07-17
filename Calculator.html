@@ -1,0 +1,98 @@
+<html>
+  <head>
+	<title>NorthEast Solite</title>
+	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive-nav.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <style>
+      #applications-a {
+        border-bottom: 1px solid #fff !important;
+      }
+    </style>
+    <link rel="stylesheet" href="css/responsive-nav.css">
+    <script type="text/javascript">
+      $(document).on("scroll",function(){
+          if($(document).scrollTop()>100){
+              $("header").addClass("smaller-nav");
+              $("header").addClass("smaller-nav #main-nav .left-nav a");
+              $("header").addClass("smaller-nav #main-nav .right-nav a");
+              $("header").addClass("smaller-nav #main-nav .logo-nav");
+              $("header").addClass("smaller-nav #main-nav .left-nav");
+              $("header").addClass("smaller-nav #main-nav .right-nav");
+          } else{
+              $("header").removeClass("smaller-nav");
+          }
+      });
+    </script>
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="head" id="main-page-head">
+        <header class="nav-container">
+          <div class="nav" id="main-nav">
+            <div class="left-nav">
+              <a class="uppercase" id="products-a" href="products.html">Products</a>
+              <a class="uppercase" id="applications-a" href="applications.html">Applications</a>
+            </div>
+            <div class="logo-nav">
+              <a href="index.html"><div class="logo" id="main-page-logo" alt="northeast-solite-corp"></div></a>
+            </div>
+            <div class="right-nav">
+              <a class="uppercase" id="sustainability-a" href="sustainability.html">Sustainability</a>
+              <a class="uppercase" id="about-a" href="about.html">About</a>
+            </div>
+          </div>
+        </header>
+        <div class="uppercase" class="caption" id="main-caption"><p>Lightest, Most Durable Concrete filler since 1947</p></div>
+      </div>
+    </div>
+    <div class="content" id="main-page-content">
+      <form class="pure-form pure-form-aligned">
+    <fieldset>
+        <div class="pure-control-group">
+            <label for="number-width">Width:</label>
+            <input id="number-width" type="text" placeholder="3">
+        </div>
+
+        <div class="pure-control-group">
+            <label for="number-length">Length:</label>
+            <input id="number-length" type="text" placeholder="5">
+        </div>
+
+        <div class="pure-control-group">
+            <label for="number-depth">Depth:</label>
+            <input id="number-depth" type="text" placeholder="5">
+        </div>
+        <br>
+        <br>
+        <div class="concrete-type">
+            <label for="concrete-type">Concrete Type:</label>
+            
+            <select>
+                <option value="volvo">Type 1</option>
+                <option value="saab">Type 2</option>
+                <option value="opel">Type 3</option>
+                <option value="audi">Type 4</option>
+            </select>
+        </div>
+        <div>
+            <label for="total">Total:</label>
+          <div class="total-div"></div>
+          
+        </div>
+
+            <button type="submit" class="pure-button pure-button-primary">Submit</button>
+        </div>
+    </fieldset>
+</form>
+      
+      
+      
+    
+    </div>
+    <div class="footer">
+      <p class="copyright">&copy;Copyright 2015 North Solite Corporation All Rights Reserved</p>
+      <p class="web-credit"><a href="marinermedia.com">Website by Mariner Media</a></p>
+    </div>
+  </body>
+</html>
