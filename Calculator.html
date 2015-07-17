@@ -47,21 +47,33 @@
       </div>
     </div>
     <div class="content" id="main-page-content">
+      <p>The Greatest Quote Calculator for Concrete Enthusiasts!</p>
       <form class="pure-form pure-form-aligned">
     <fieldset>
         <div class="pure-control-group">
             <label for="number-width">Width:</label>
             <input id="number-width" type="text" placeholder="3">
+            <select>
+                <option value="foot">Foot</option>
+                <option value="inches">Inches</option>
+            </select>
         </div>
 
         <div class="pure-control-group">
             <label for="number-length">Length:</label>
             <input id="number-length" type="text" placeholder="5">
+            <select>
+                <option value="foot">Foot</option>
+                <option value="inches">Inches</option>
+            </select>
         </div>
 
         <div class="pure-control-group">
             <label for="number-depth">Depth:</label>
             <input id="number-depth" type="text" placeholder="5">
+            <select>
+                <option value="inches">Inches</option>
+            </select>
         </div>
         <br>
         <br>
@@ -81,7 +93,7 @@
           
         </div>
 
-            <button type="submit" class="pure-button pure-button-primary" id="submitButton">Submit</button>
+            <input type="button" id="submitButton" value="Submit"></input>
         </div>
     </fieldset>
 </form>
