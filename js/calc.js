@@ -1,9 +1,9 @@
 $('input#mybutton').click(function () {
     'use strict';
     var typeprice;
-    var width = $('#width-area').val();
-    var length = $('#length-area').val();
-    var depth = $('#depth-area').val();
+    var width = $('#number-width').val();
+    var length = $('#number-length').val();
+    var depth = $('#number-depth').val();
     var type = $('#type').val();
     if (type === 'type1') {
         typeprice = 1;
