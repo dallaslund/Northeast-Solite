@@ -3,10 +3,24 @@
 	<title>NorthEast Solite</title>
 	<link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive-nav.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <style>
       #products-a {
         border-bottom: 1px solid #fff !important;
+      }
+    </style>
+    <style>
+      .product-slider {
+        height:250px;
+      }
+      .product-first-slide, 
+      .product-second-slide, 
+      .product-third-slide, 
+      .product-fourth-slide {
+        height:250px;
+        width: 250px !important;
       }
     </style>
     <link rel="stylesheet" href="css/responsive-nav.css">
@@ -52,23 +66,23 @@
         <p id="second-text-neck">We use carefully selected raw materials that go through an intense heating and cooling process to make structurally efficient, high strength, durable products that are fire resistant and energy saving.</p>
       </div>
       <div class="products-section">
-        <div class="third" id="fist-third">
-          <p>- 30% lighter than leading filler</p>
-          <br>
-          <p>- Firesafe</p>
-          <div class="img-container" id="first-third-img"></div>
-        </div>
-        <div class="third" id="second-third">
-          <p>- 30% lighter than leading filler</p>
-          <br>
-          <p>- Firesafe</p>
-          <div class="img-container" id="second-third-img"></div>
-        </div>
-        <div class="third" id="third-third">
-          <p>- 30% lighter than leading filler</p>
-          <br>
-          <p>- Firesafe</p>
-          <div class="img-container" id="third-third-img"></div>
+         <div class="product-slider">
+            <div class="prod-first-slide">
+              <div class="slide-content">
+              </div>
+            </div>
+            <div class="prod-second-slide">
+              <div class="slide-content">
+              </div>
+            </div>
+            <div class="prod-third-slide">
+              <div class="slide-content">
+              </div>
+            </div>
+            <div class="prod-fourth-slide">
+              <div class="slide-content">
+              </div>
+            </div>
         </div>
       </div>
         
@@ -81,18 +95,6 @@
       <div class="quote-box">
         <p>Sometimes it takes 30 years to prove you're right! <a href="#">Find out why</a></p>
       </div>
-        
-<!--
-      <div class="sustainability-section sustainability-section-products">
-          <p class="uppercase" id="sustain-title-products">Sustainability</p>
-        <div class="stone-image">
-          <div id="half-caption" class="half-caption-products">
-            <p>How Northeast Solite is committed to responsible treatment of the environment</p>
-            <a href="#">Find out here</a>
-          </div>
-        </div>
-      </div>
--->
       <div class="systainability-section" id="sustainability-products">
         <p class="uppercase" id="sustainability-title-prod">Sustainability</p>
           <div class="stone-image">
@@ -131,5 +133,32 @@
       <p class="copyright">&copy;Copyright 2015 North Solite Corporation All Rights Reserved</p>
       <p class="web-credit"><a href="marinermedia.com">Website by Mariner Media</a></p>
     </div>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript">
+      $(document).on("scroll",function(){
+          if($(document).scrollTop()>83){
+              $("header").addClass("smaller-nav");
+              $("header").addClass("smaller-nav #main-nav .left-nav a");
+              $("header").addClass("smaller-nav #main-nav .right-nav a");
+              $("header").addClass("smaller-nav #main-nav .logo-nav");
+              $("header").addClass("smaller-nav #main-nav .left-nav");
+              $("header").addClass("smaller-nav #main-nav .right-nav");
+          } else{
+              $("header").removeClass("smaller-nav");
+          }
+      });
+    </script>
+    <script>
+      $(document).ready(function(){
+       $('.product-slider').slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          adaptiveHeight: true
+        });
+      });
+    </script>
   </body>
 </html>

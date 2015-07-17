@@ -52,6 +52,36 @@
     color: #fff;
   }
 
+  /* Button styling */
+  .button {
+    background-color: #fff;
+    border: solid 1px #cbcccb;
+    font-weight: 100;
+    color: #454545;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 14px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    cursor: pointer;
+  }
+  .button:hover {
+    background-color: #d3d3d3;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+
+
 /* Menu Styling */
   #main-nav .left-nav a:hover, #main-nav .right-nav a:hover {
     border-bottom: 2px solid #000;
@@ -72,6 +102,7 @@
     height: 53px;
     position: fixed;
     z-index: 2;
+    margin-top: -85px;
   }
   .logo-nav {
     float: left;
@@ -102,7 +133,6 @@
   }
   .nav-container {
     height: 85px !important;
-    margin-top: -85px;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     -o-transition: all .5s ease;
@@ -357,3 +387,92 @@
   .footer p {
     padding-left: 15px;
   }
+
+
+/* Uncategorized */
+.main-slider {
+  margin-top: 85px; 
+}
+.main-first-slide {
+  background: url(../imgs/lake.jpg) no-repeat center center;
+}
+.main-second-slide {
+  background: url(../imgs/train.jpg) no-repeat center center;
+}
+.main-third-slide {
+  background: url(../imgs/windmill.jpg) no-repeat center center;
+}
+.slide-content {
+  text-align: -webkit-center;
+  color: #FFF;
+  margin-top: 17%;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+}
+.mobile-menu {
+  display: none; 
+}
+@media screen and (max-width: 955px) {
+    .nav-container {
+      display: none;
+    }
+    .main-slider {
+      margin-top: 0px;
+    }
+    .mobile-menu {
+      background: url(../imgs/threelines.png) no-repeat center center;
+      background-size: cover;
+      width: 30px;
+      height: 40px;
+      display: block;
+      position: fixed;
+      padding-left: 1.25em;
+      z-index: 100;
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+    .mobile-items p {
+      padding-left: 20px;
+    }
+    .product-slider .slick-prev, .product-slider .slick-next {
+      display: none !important;
+      color: #fff;
+    }
+}
+@media screen and (max-width: 700px) {
+  .slide-content{
+    margin-top:  30%; 
+  }
+}
+.prod-first-slide {
+  background: url(../imgs/greenlite.jpg) no-repeat center center; 
+  background-size: 250px 200px;
+}
+.prod-second-slide {
+  background: url(../imgs/hydrolite.jpg) no-repeat center center;
+  background-size: 250px 200px;
+}
+.prod-third-slide {
+  background: url(../imgs/kenlite.jpg) no-repeat center center;
+  background-size: 250px 200px;
+}
+.prod-fourth-slide {
+  background: url(../imgs/solite.jpg) no-repeat center center;
+  background-size: 250px 200px;
+}
+.product-slider .slick-prev {
+  margin-left: 100px !important;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+}
+.product-slider .slick-next {
+  right: 100px !important;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+}
+.product-slider .slick-prev:before, .product-slider .slick-next:before{
+  color: #333; 
+}

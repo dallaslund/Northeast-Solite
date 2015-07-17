@@ -3,41 +3,57 @@
 	<title>NorthEast Solite</title>
 	<link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive-nav.css">
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script type="text/javascript">
-      $(document).on("scroll",function(){
-          if($(document).scrollTop()>100){
-              $("header").addClass("smaller-nav");
-              $("header").addClass("smaller-nav #main-nav .left-nav a");
-              $("header").addClass("smaller-nav #main-nav .right-nav a");
-              $("header").addClass("smaller-nav #main-nav .logo-nav");
-              $("header").addClass("smaller-nav #main-nav .left-nav");
-              $("header").addClass("smaller-nav #main-nav .right-nav");
-          } else{
-              $("header").removeClass("smaller-nav");
-          }
-      });
-      </script>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <style>
+      .main-slider {
+        height:530px;
+      }
+      .main-first-slide {
+        height:530px;
+      }
+    </style>
   </head>
   <body>
-    <div class="overlay">
-      <div class="head" id="main-page-head">
-        <header class="nav-container">
-          <div class="nav" id="main-nav">
-            <div class="left-nav">
-              <a class="uppercase" id="products-a" href="products.html">Products</a>
-              <a class="uppercase" id="applications-a" href="applications.html">Applications</a>
-            </div>
-            <div class="logo-nav">
-              <a href="index.html"><div class="logo" id="main-page-logo" alt="northeast-solite-corp"></div></a>
-            </div>
-            <div class="right-nav">
-              <a class="uppercase" id="sustainability-a" href="sustainability.html">Sustainability</a>
-              <a class="uppercase" id="about-a" href="about.html">About</a>
-            </div>
-          </div>
-        </header>
-        <div class="uppercase" class="caption" id="main-caption"><p>Lightest, Most Durable Concrete filler since 1947</p></div>
+    <header class="nav-container">
+      <div class="nav" id="main-nav">
+        <div class="left-nav">
+          <a class="uppercase" id="products-a" href="products.html">Products</a>
+          <a class="uppercase" id="applications-a" href="applications.html">Applications</a>
+        </div>
+        <div class="logo-nav">
+          <a href="index.html"><div class="logo" id="main-page-logo" alt="northeast-solite-corp"></div></a>
+        </div>
+        <div class="right-nav">
+          <a class="uppercase" id="sustainability-a" href="sustainability.html">Sustainability</a>
+          <a class="uppercase" id="about-a" href="about.html">About</a>
+        </div>
+      </div>
+    </header>
+    <div class="mobile-items" style="display:none;">
+        <p>Link 1</p>
+        <p>Link 2</p>
+        <p>Link 3</p>
+    </div>
+    <a class="mobile-menu" href="#" ></a>
+    <div class="main-slider">
+      <div class="main-first-slide">
+        <div class="slide-content">
+          <p>your content</p>
+          <a href="#" class="button">Test</a>
+        </div>
+      </div>
+      <div class="main-second-slide">
+        <div class="slide-content">
+          <p>your content</p>
+          <a href="#" class="button">Test</a>
+        </div>
+      </div>
+      <div class="main-third-slide">
+        <div class="slide-content">
+          <p>your content</p>
+          <a href="#" class="button">Test</a>
+        </div>
       </div>
     </div>
     <div class="content" id="main-page-content">
@@ -120,5 +136,42 @@
     <script src="//use.typekit.net/hyy8zyk.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
 -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript">
+      $(document).on("scroll",function(){
+          if($(document).scrollTop()>83){
+              $("header").addClass("smaller-nav");
+              $("header").addClass("smaller-nav #main-nav .left-nav a");
+              $("header").addClass("smaller-nav #main-nav .right-nav a");
+              $("header").addClass("smaller-nav #main-nav .logo-nav");
+              $("header").addClass("smaller-nav #main-nav .left-nav");
+              $("header").addClass("smaller-nav #main-nav .right-nav");
+          } else{
+              $("header").removeClass("smaller-nav");
+          }
+      });
+      </script>
+    <script>
+      $(document).ready(function(){
+        $('.main-slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            adaptiveHeight: false,
+            autoplay: true,
+            autoplaySpeed: 4000
+        });
+      });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(
+          function(){
+              $(".mobile-menu").click(function () {
+                  $(".mobile-items").toggle();
+              });
+          });
+    </script>
   </body>
 </html>

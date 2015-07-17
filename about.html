@@ -3,6 +3,8 @@
 	<title>NorthEast Solite</title>
 	<link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive-nav.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <style>
       #about-a {
@@ -122,5 +124,32 @@
       <p class="copyright">&copy;Copyright 2015 North Solite Corporation All Rights Reserved</p>
       <p class="web-credit"><a href="marinermedia.com">Website by Mariner Media</a></p>
     </div>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript">
+      $(document).on("scroll",function(){
+          if($(document).scrollTop()>83){
+              $("header").addClass("smaller-nav");
+              $("header").addClass("smaller-nav #main-nav .left-nav a");
+              $("header").addClass("smaller-nav #main-nav .right-nav a");
+              $("header").addClass("smaller-nav #main-nav .logo-nav");
+              $("header").addClass("smaller-nav #main-nav .left-nav");
+              $("header").addClass("smaller-nav #main-nav .right-nav");
+          } else{
+              $("header").removeClass("smaller-nav");
+          }
+      });
+      </script>
+    <script>
+      $(document).ready(function(){
+        $('.main-slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: false
+        });
+      });
+    </script>
   </body>
 </html>
