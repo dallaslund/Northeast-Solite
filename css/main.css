@@ -143,8 +143,67 @@
     width: calc((100% - 145px) /2); 
   }
 
-
 /* Page Specific Styling */
+
+/* Calculator Page */
+
+  form.pure-form.pure-form-aligned {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pure-control-group {
+    text-align: -webkit-right;
+    padding: 4px;
+  }
+  div#type {
+    text-align: -webkit-right;
+    
+  }
+  #total-calc {
+    text-align: -webkit-right;
+/*    padding-right: 249px;*/
+    display: inline-block;
+    float: left;
+  }
+  #sumbit-calc {
+    text-align: -webkit-right;
+/*    padding-right: 249px;*/
+    display: inline-block;
+    float: left;
+  }
+  #type-calc {
+    display: inline-block;
+    margin-top: 25px;
+    padding-left: 9px;
+  }
+  .concrete-type {
+    display: inline-block;
+    float: left;
+/*    margin-left: 6px;*/
+  }
+  p#calc-title {
+    text-align: -webkit-center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    font-weight: 600
+  }
+  input#number-width {
+    padding: 5px;
+    border-radius: 6%;
+  }
+  input#number-length {
+    padding: 5px;
+    border-radius: 6%;
+  }
+  input#number-depth {
+    padding: 5px;
+    border-radius: 6%;
+  }
+    .select-calc {
+    border-radius: 6%;
+  }
 
   /* Product Page */
   .stone-image {

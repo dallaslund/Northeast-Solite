@@ -47,13 +47,13 @@
       </div>
     </div>
     <div class="content" id="main-page-content">
-      <p>The Greatest Quote Calculator for Concrete Enthusiasts!</p>
+      <p id="calc-title">The Greatest Quote Calculator for Concrete Enthusiasts!</p>
       <form class="pure-form pure-form-aligned">
         <fieldset>
             <div class="pure-control-group">
                 <label for="number-width">Width:</label>
                 <input id="number-width" type="text" placeholder="3">
-                <select>
+                <select class="select-calc">
                     <option value="foot">Foot</option>
                     <option value="inches">Inches</option>
                 </select>
@@ -61,7 +61,7 @@
             <div class="pure-control-group">
                 <label for="number-length">Length:</label>
                 <input id="number-length" type="text" placeholder="5">
-                <select>
+                <select class="select-calc">
                     <option value="foot">Foot</option>
                     <option value="inches">Inches</option>
                 </select>
@@ -69,25 +69,29 @@
             <div class="pure-control-group">
                 <label for="number-depth">Depth:</label>
                 <input id="number-depth" type="text" placeholder="5">
-                <select>
+                <select class="select-calc">
                     <option value="inches">Inches</option>
                 </select>
             </div>
             <br>
-            <br>
             <div class="concrete-type" id="type">
-                <label for="concrete-type">Concrete Type:</label>
-                <select>
-                    <option value="type1">Type 1</option>
-                    <option value="type2">Type 2</option>
-                    <option value="type3">Type 3</option>
-                    <option value="type4">Type 4</option>
-                </select>
+                <label for="concrete-type">Concrete<br> Type:</label>
             </div>
-            <div>
+                <div id="type-calc">
+                  <select class="select-calc">
+                      <option value="type1">Type 1</option>
+                      <option value="type2">Type 2</option>
+                      <option value="type3">Type 3</option>
+                      <option value="type4">Type 4</option>
+                  </select>
+                </div>
+            <br>
+            <div id="total-calc">
               <label for="total">Total:</label>
               <div class="total-div"></div>
             </div>
+            <br>
+            <div id="sumbit-calc">
                 <input type="button" id="submitButton" value="Submit"></input>
             </div>
         </fieldset>
