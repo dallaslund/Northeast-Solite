@@ -376,13 +376,15 @@
 
 /* Footer Styling*/
   .footer {
-    background-color: #5D5DEE;
+    background-color: #37454E;
     padding: 10px 10px 10px 10px;
   }
   .footer p, .footer a {
-    color: #FFF;
+    color: #615D70;
     font-size: 14px;
     text-transform: uppercase;
+    text-decoration: none;
+    text-align: -webkit-center;
   }
   .footer p {
     padding-left: 15px;
@@ -475,4 +477,105 @@
 }
 .product-slider .slick-prev:before, .product-slider .slick-next:before{
   color: #333; 
+}
+.calc-box-container {
+  width: 75%;
+  height: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(../imgs/dam.jpg) no-repeat center center;
+  background-size: 100% 100%;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.calc-box {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.calc-box:hover {
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.calc-box .button {
+  margin-left: calc(50% - 60px);
+  margin-top: 245px;
+}
+.calc-box p {
+  text-align: center; 
+  padding-top:200px; 
+  font-weight:600; 
+  color:#fff; 
+  font-size:24px; 
+}
+
+.calc-textbox {
+  padding: 5px;
+  margin: 2px;
+  border-radius: 4px;
+  font-weight: 100;
+  border: 1px solid #CCC;
+  vertical-align: middle;
+  font-size: 12px;
+}
+.calc-label {
+  width: 150px;
+  text-align: right;
+  float: left;
+  line-height: 24px;
+  padding-right: 10px;
+}
+.calc-select {
+  height: 27px;
+  border: 1px solid #CCC;
+  background-color: #FFF; 
+  width: 100px;
+}
+.cyards-div {
+  display: inline-block;
+  clear: both;
+}
+input#submitButton {
+  float: left;
+  height: 27px;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  margin-left: -110px;
+  width: 100px;
+  display: inline-block;
+  background-color: #fff;
+  margin-top: 1px;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+#submitButton:hover {
+  background-color: #d3d3d3;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.calc-form {
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
