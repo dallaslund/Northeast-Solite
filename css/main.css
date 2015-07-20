@@ -238,7 +238,7 @@
     font-weight: 100;
   }
   div#neck-text {
-    width: 85%;
+    width: 86%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -610,4 +610,52 @@ button:focus {
 }
 .calc-form-field {
   border: 1px solid #000; 
+}
+
+#benefits-one {
+  background-color: #C3C3C3;
+  padding-left: 320px;
+  padding-right: 320px;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+#benefits-page-content {
+  width: 100% !important;
+  
+}
+#benefits-page-content #neck-text {
+  width: 50% !important; 
+}
+#benefits-one-title {
+  text-align: center;
+}
+#benefits-two {
+  background: url(../imgs/bay-bridge-1.jpg) no-repeat center center;
+  background-size: cover;
+  padding-left: 690px;
+  padding-right: 200px;
+  padding-bottom: 140px;
+  padding-top: 80px;
+}
+#benefits-three {
+  background-color: #FFF;
+  padding-left: 750px;
+  padding-right: 200px;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+#benefits-title-pictures {
+  background-color: #0968E1;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#benefits-text-pictures {
+  text-align: center;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 600;
+}
+#get-quote-text {
+  text-align: center;
+  color: #0968E1;
 }
