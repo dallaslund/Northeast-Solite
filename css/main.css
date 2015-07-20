@@ -630,7 +630,7 @@ button:focus {
   text-align: center;
 }
 #benefits-two {
-  background: url(../imgs/bay-bridge-1.jpg) no-repeat center center;
+  background: url(../imgs/bay-bridge-1.jpg) no-repeat center center fixed;
   background-size: cover;
   padding-left: 690px;
   padding-right: 200px;
@@ -638,10 +638,10 @@ button:focus {
   padding-top: 80px;
 }
 #benefits-three {
-  background-color: #FFF;
+  background-color: #F1F2F1;
   padding-left: 750px;
-  padding-right: 200px;
-  padding-bottom: 80px;
+  padding-right: 10%;
+  padding-bottom: 120px;
   padding-top: 80px;
 }
 #benefits-title-pictures {
@@ -658,4 +658,77 @@ button:focus {
 #get-quote-text {
   text-align: center;
   color: #0968E1;
+}
+#number-one,
+#number-two, 
+#number-three {
+  position: absolute;
+  margin-left: -50px;
+  font-size: 30px;
+  margin-top: -5px;
+}
+#number-three {
+  margin-top: 10px !important; 
+}
+#number-two {
+  margin-top: 10px !important;
+  color: #fff;
+}
+#benefits-two {
+  color: #fff; 
+}
+.benefits-three-img {
+  background: url(../imgs/graph.jpg) no-repeat center center;
+  background-size: contain;
+  position: absolute;
+  width: 420px;
+  height: 300px;
+  margin-left: -515px;
+  margin-top: -35px;
+}
+#benefits-button-holder {
+  width: 130px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#benefits-last {
+  padding-top: 75px;
+  padding-bottom: 125px;
+}
+#imgs-solite-products {
+  display: flex;
+}
+#benefits-prod-one,
+#benefits-prod-two,
+#benefits-prod-three {
+  width: 33%;
+  float: left;
+}
+#benefits-prod-one {
+  background: url(../imgs/National-Gegraphics.jpg) no-repeat center center;
+  background-size: cover;
+  width: 33%;
+  height: 250px;
+  
+}
+#benefits-prod-two {
+  background: url(../imgs/Chesepeake-Bay.jpg) no-repeat center center;
+  background-size: cover;
+  width: 34%;
+  height: 250px;
+}
+#benefits-prod-three {
+  background: url(../imgs/ChurchHill-Downs.jpg) no-repeat center center;
+  background-size: cover;
+  width: 33%;
+  height: 250px;
+}
+#benefits-prod-one p,
+#benefits-prod-two p,
+#benefits-prod-three p {
+  background-color: rgba(255, 255, 255, 0.68);
+  width: 90%;
+  padding: 10px;
+  font-weight: 600;
+  margin-top: 160px;
 }
