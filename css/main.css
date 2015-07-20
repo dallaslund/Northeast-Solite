@@ -396,13 +396,13 @@
   margin-top: 85px; 
 }
 .main-first-slide {
-  background: url(../imgs/lincoln_center.jpg) no-repeat center center;
-}
-.main-second-slide {
   background: url(../imgs/bay%20bridge.jpg) no-repeat center center;
 }
+.main-second-slide {
+  background: url(../imgs/comcast%20tower.jpg ) no-repeat center center;
+}
 .main-third-slide {
-  background: url(../imgs/comcast%20tower.jpg) no-repeat center center;
+  background: url(../imgs/lincoln_center.jpg) no-repeat center center;
 }
 .slide-content {
   text-align: -webkit-center;
