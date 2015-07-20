@@ -8,7 +8,7 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <style>
       #products-a {
-        border-bottom: 1px solid #fff !important;
+        border-bottom: 1px solid #000 !important;
       }
     </style>
     <style>
@@ -46,14 +46,14 @@
       <div class="nav" id="main-nav">
         <div class="left-nav">
           <a class="uppercase" id="products-a" href="products.html">Products</a>
-<!--          <a class="uppercase" id="applications-a" href="applications.html">Applications</a>-->
+          <a class="uppercase" id="applications-a" href="applications.html">Applications</a>
         </div>
         <div class="logo-nav">
           <a href="index.html"><div class="logo" id="main-page-logo" alt="northeast-solite-corp"></div></a>
         </div>
         <div class="right-nav">
           <a class="uppercase" id="sustainability-a" href="sustainability.html">Sustainability</a>
-<!--          <a class="uppercase" id="about-a" href="about.html">About</a>-->
+          <a class="uppercase" id="about-a" href="about.html">About</a>
         </div>
       </div>
     </header>
@@ -110,7 +110,6 @@
             </div>
           </div>
       </div>
-        
       <div id="application-section-products">
           <p class="uppercase" id="application-title-products">Applications</p>
           <ul id="applications-list">
@@ -135,6 +134,12 @@
           </ul>
       </div>
     </div>
+    <div class="calc-box-container">
+      <div class="calc-box">
+        <p style="text-align: center; padding-top:200px; font-weight:600; color:#fff; font-size:24px;">Need a quote?</p>
+        <a class="button" href="calculator.html" style="margin-top:0px;">Get a quote</a>
+      </div>
+    </div>
     <div class="footer">
       <p class="copyright">&copy;Copyright 2015 North Solite Corporation All Rights Reserved</p>
       <p class="web-credit"><a href="marinermedia.com">Website by Mariner Media</a></p>
@@ -154,6 +159,14 @@
               $("header").removeClass("smaller-nav");
           }
       });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(
+          function(){
+              $(".mobile-menu").click(function () {
+                  $(".mobile-items").toggle();
+              });
+          });
     </script>
     <script>
       $(document).ready(function(){
