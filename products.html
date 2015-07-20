@@ -43,20 +43,26 @@
     <div class="overlay">
       <div class="head" id="main-page-head">
         <header class="nav-container">
-          <div class="nav" id="main-nav">
-            <div class="left-nav">
-              <a class="uppercase" id="products-a" href="products.html">Products</a>
-              <a class="uppercase" id="applications-a" href="applications.html">Applications</a>
-            </div>
-            <div class="logo-nav">
-              <a href="index.html"><div class="logo" id="main-page-logo" alt="northeast-solite-corp"></div></a>
-            </div>
-            <div class="right-nav">
-              <a class="uppercase" id="sustainability-a" href="sustainability.html">Sustainability</a>
-              <a class="uppercase" id="about-a" href="about.html">About</a>
-            </div>
-          </div>
-        </header>
+      <div class="nav" id="main-nav">
+        <div class="left-nav">
+          <a class="uppercase" id="products-a" href="products.html">Products</a>
+          <a class="uppercase" id="applications-a" href="applications.html">Applications</a>
+        </div>
+        <div class="logo-nav">
+          <a href="index.html"><div class="logo" id="main-page-logo" alt="northeast-solite-corp"></div></a>
+        </div>
+        <div class="right-nav">
+          <a class="uppercase" id="sustainability-a" href="sustainability.html">Sustainability</a>
+          <a class="uppercase" id="about-a" href="about.html">About</a>
+        </div>
+      </div>
+    </header>
+    <div class="mobile-items" style="display:none;">
+        <p>Link 1</p>
+        <p>Link 2</p>
+        <p>Link 3</p>
+    </div>
+    <a class="mobile-menu" href="#" ></a>
         <div class="uppercase" class="caption" id="main-caption"><p>Lightest, Most Durable Concrete filler since 1947</p></div>
       </div>
     </div>
@@ -153,6 +159,14 @@
               $("header").removeClass("smaller-nav");
           }
       });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(
+          function(){
+              $(".mobile-menu").click(function () {
+                  $(".mobile-items").toggle();
+              });
+          });
     </script>
     <script>
       $(document).ready(function(){

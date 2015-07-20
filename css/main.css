@@ -421,6 +421,9 @@
     }
     .main-slider {
       margin-top: 0px;
+    } 
+    .head {
+      margin-top: -85px;
     }
     .mobile-menu {
       background: url(../imgs/threelines.png) no-repeat center center;
