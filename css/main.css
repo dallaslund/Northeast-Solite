@@ -445,6 +445,26 @@
       color: #fff;
     }
     .fourth-box {
+      width: 46% !important;
+      margin-top: 10px !important;
+    }
+    #first-fourth-img,
+    #second-fourth-img,
+    #third-fourth-img,
+    #fourth-fourth-img {
+      width: 34.5% !important;
+    }
+    .footer {
+      margin-top: 750px; 
+    }
+}
+@media screen and (max-width: 700px) {
+  .slide-content{
+    margin-top:  30%; 
+  }
+}
+@media screen and (max-width: 650px) {
+   .fourth-box {
       float: none !important;
       width: 100% !important;
       margin-top: 10px !important;
@@ -455,14 +475,6 @@
     #fourth-fourth-img {
       width: 75% !important;
     }
-    .footer {
-      margin-top: 750px; 
-    }
-}
-@media screen and (max-width: 700px) {
-  .slide-content{
-    margin-top:  30%; 
-  }
 }
 .prod-first-slide {
   background: url(../imgs/greenlite.jpg) no-repeat center center; 
