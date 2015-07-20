@@ -13,6 +13,18 @@
         height:530px;
       }
     </style>
+    <style>
+      .product-slider {
+        height:250px;
+      }
+      .product-first-slide, 
+      .product-second-slide, 
+      .product-third-slide, 
+      .product-fourth-slide {
+        height:250px;
+        width: 250px !important;
+      }
+    </style>
   </head>
   <body>
     <header class="nav-container">
@@ -65,23 +77,23 @@
         <div class="section-title">
           <p class="uppercase">Products</p>
         </div>
-        <div class="third" id="fist-third">
-          <p>- 30% lighter than leading filler</p>
-          <br>
-          <p>- Firesafe</p>
-          <div class="img-container" id="first-third-img"></div>
-        </div>
-        <div class="third" id="second-third">
-          <p>- 30% lighter than leading filler</p>
-          <br>
-          <p>- Firesafe</p>
-          <div class="img-container" id="second-third-img"></div>
-        </div>
-        <div class="third" id="third-third">
-          <p>- 30% lighter than leading filler</p>
-          <br>
-          <p>- Firesafe</p>
-          <div class="img-container" id="third-third-img"></div>
+        <div class="product-slider">
+            <div class="prod-first-slide">
+              <div class="slide-content">
+              </div>
+            </div>
+            <div class="prod-second-slide">
+              <div class="slide-content">
+              </div>
+            </div>
+            <div class="prod-third-slide">
+              <div class="slide-content">
+              </div>
+            </div>
+            <div class="prod-fourth-slide">
+              <div class="slide-content">
+              </div>
+            </div>
         </div>
       </div>
       <div class="application-section">
@@ -172,6 +184,19 @@
                   $(".mobile-items").toggle();
               });
           });
+    </script>
+    <script>
+      $(document).ready(function(){
+       $('.product-slider').slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          adaptiveHeight: true,
+          autoplay: true,
+          autoplaySpeed: 4000
+        });
+      });
     </script>
   </body>
 </html>

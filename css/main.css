@@ -441,6 +441,20 @@
       display: none !important;
       color: #fff;
     }
+    .fourth-box {
+      float: none !important;
+      width: 100% !important;
+      margin-top: 10px !important;
+    }
+    #first-fourth-img,
+    #second-fourth-img,
+    #third-fourth-img,
+    #fourth-fourth-img {
+      width: 75% !important;
+    }
+    .footer {
+      margin-top: 750px; 
+    }
 }
 @media screen and (max-width: 700px) {
   .slide-content{
@@ -578,4 +592,7 @@ select:focus,
 textarea:focus,
 button:focus {
     outline: none;
+}
+.calc-form-field {
+  border: 1px solid #000; 
 }

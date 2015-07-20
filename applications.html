@@ -8,7 +8,19 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <style>
       #applications-a {
-        border-bottom: 1px solid #fff !important;
+        border-bottom: 1px solid #000 !important;
+      }
+    </style>
+    <style>
+      .product-slider {
+        height:250px;
+      }
+      .product-first-slide, 
+      .product-second-slide, 
+      .product-third-slide, 
+      .product-fourth-slide {
+        height:250px;
+        width: 250px !important;
       }
     </style>
     <link rel="stylesheet" href="css/responsive-nav.css">
@@ -57,23 +69,23 @@
         <div class="section-title">
           <p class="uppercase">Products</p>
         </div>
-        <div class="third" id="fist-third">
-          <p>- 30% lighter than leading filler</p>
-          <br>
-          <p>- Firesafe</p>
-          <div class="img-container" id="first-third-img"></div>
-        </div>
-        <div class="third" id="second-third">
-          <p>- 30% lighter than leading filler</p>
-          <br>
-          <p>- Firesafe</p>
-          <div class="img-container" id="second-third-img"></div>
-        </div>
-        <div class="third" id="third-third">
-          <p>- 30% lighter than leading filler</p>
-          <br>
-          <p>- Firesafe</p>
-          <div class="img-container" id="third-third-img"></div>
+        <div class="product-slider">
+            <div class="prod-first-slide">
+              <div class="slide-content">
+              </div>
+            </div>
+            <div class="prod-second-slide">
+              <div class="slide-content">
+              </div>
+            </div>
+            <div class="prod-third-slide">
+              <div class="slide-content">
+              </div>
+            </div>
+            <div class="prod-fourth-slide">
+              <div class="slide-content">
+              </div>
+            </div>
         </div>
       </div>
       <div class="application-section">
@@ -148,6 +160,17 @@
             speed: 300,
             slidesToShow: 1,
             adaptiveHeight: false
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function(){
+       $('.product-slider').slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          adaptiveHeight: true
         });
       });
     </script>
