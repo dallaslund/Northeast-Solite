@@ -5,6 +5,9 @@
     <link rel="stylesheet" href="css/responsive-nav.css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <style>
+      #applications-a {
+        border-bottom: 1px solid #fff !important;
+      }
     </style>
     <link rel="stylesheet" href="css/responsive-nav.css">
     <script type="text/javascript">
@@ -44,75 +47,79 @@
       </div>
     </div>
     <div class="content" id="main-page-content">
-      <form class="calc-form">
-        <fieldset class="calc-form-field">
-            <div class="calc-group">
-                <label class="calc-label" for="number-width">Width:</label>
-                <input class="calc-textbox" id="number-width" type="text" placeholder="3">
-                <select class="calc-select">
-                    <option value="foot">Feet</option>
+      <p id="calc-title">The Greatest Quote Calculator for Concrete Enthusiasts!</p>
+      <form class="pure-form pure-form-aligned">
+        <fieldset>
+            <div class="pure-control-group">
+                <label for="number-width">Width:</label>
+                <input id="number-width" type="text" placeholder="3">
+                <select class="select-calc">
+                    <option value="foot">Foot</option>
                     <option value="inches">Inches</option>
                 </select>
             </div>
-            <div class="calc-group">
-                <label class="calc-label" for="number-length">Length:</label>
-                <input class="calc-textbox" id="number-length" type="text" placeholder="5">
-                <select class="calc-select">
-                    <option value="foot">Feet</option>
+            <div class="pure-control-group">
+                <label for="number-length">Length:</label>
+                <input id="number-length" type="text" placeholder="5">
+                <select class="select-calc">
+                    <option value="foot">Foot</option>
                     <option value="inches">Inches</option>
                 </select>
             </div>
-            <div class="calc-group">
-                <label class="calc-label" for="number-depth">Depth:</label>
-                <input class="calc-textbox" id="number-depth" type="text" placeholder="5">
-                <select class="calc-select">
+            <div class="pure-control-group">
+                <label for="number-depth">Depth:</label>
+                <input id="number-depth" type="text" placeholder="5">
+                <select class="select-calc">
                     <option value="inches">Inches</option>
                 </select>
             </div>
+            <br>
             <div class="concrete-type" id="type">
-                <label class="calc-label" for="concrete-type">Concrete Type:</label>
-                <select class="calc-select" id="ct">
-                    <option value="type1">Type 1</option>
-                    <option value="type2">Type 2</option>
-                    <option value="type3">Type 3</option>
-                    <option value="type4">Type 4</option>
-                </select>
+                <label for="concrete-type">Concrete<br> Type:</label>
             </div>
-            <div class="calc-group">
-              <label class="calc-label" for="total">Cubic Yards:</label>
-              <div class="cyards-div"></div>
+                <div id="type-calc">
+                  <select class="select-calc">
+                      <option value="type1">Type 1</option>
+                      <option value="type2">Type 2</option>
+                      <option value="type3">Type 3</option>
+                      <option value="type4">Type 4</option>
+                  </select>
+                </div>
+            <br>
+            <div id="total-calc">
+              <label for="total">Total:</label>
+              <div class="total-div"></div>
             </div>
-                <input class="down-button" type="button" id="submitButton" value="Submit"></input>
+            <br>
+            <div id="sumbit-calc">
+                <input type="button" id="submitButton" value="Submit"></input>
             </div>
         </fieldset>
       </form>
     </div>
     <div class="footer">
       <p class="copyright">&copy;Copyright 2015 North Solite Corporation All Rights Reserved</p>
-      <p class="web-credit"><a href="http://www.marinermedia.com">Website by Mariner Media</a></p>
+      <p class="web-credit"><a href="marinermedia.com">Website by Mariner Media</a></p>
     </div>
   <script>
     $('input#submitButton').click(function () {
         'use strict';
-        $('#submitButton').removeClass("down-button");
         var typeprice;
         var width = $('#number-width').val();
         var length = $('#number-length').val();
         var depth = $('#number-depth').val();
         var type = $('#type').val();
-        if($('#ct').val() == 'type1'){ 
-          typeprice = 1;
-        } else if($('#ct').val() == 'type2'){
-          typeprice = 2;
-        } else if($('#ct').val() == 'type3'){
-          typeprice = 3;
-        } else if($('#ct').val() == 'type4'){
-          typeprice = 4;
+        if (type === 'type1') {
+            typeprice = 1;
+        } else if (type === 'type2') {
+            typeprice = 2;
+        } else if (type === 'type3') {
+            typeprice = 3;
+        } else {
+            typeprice = 4;
         }
         var cubicyards = (((depth / 12) * width * length) / 27);
         $('div.cyards-div').text(cubicyards.toFixed(3));
-        var total = cubicyards * typeprice;
-        $('div.totalprice').text(total.toFixed(3));
     });
   </script>
   </body>
