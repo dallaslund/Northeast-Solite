@@ -17,3 +17,17 @@ $('input#mybutton').click(function () {
     var total = (((depth / 12) * width * length) / 27) * typeprice;
     $('div.total-div').text(total);
 });
+/*
+<!------------------------------------------------------------------------
+|                                                                        |
+|                       Designed at mariner media                        |
+|                                                                        |
+|                                                                        |
+|                             visit our site                             |
+|                                                                        |
+|                                                                        |
+|                            marinermedia.com                            |
+|                                                                        |
+|                                                                        |
+------------------------------------------------------------------------->
+*/

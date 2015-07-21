@@ -354,6 +354,7 @@
   }
   #third-fourth-img {
     background: url(../imgs/light%20clay%20aggregate.jpg.jpg) no-repeat center center;
+    background-size: cover;
     width: 16.8%;
     height: 233px;
     z-index: -999;
@@ -366,7 +367,7 @@
     z-index: -999;
     position: absolute;
   }
-/*  .fourth-box p {*/
+  .fourth-box p {
     color: #FFF;
     position: absolute;
     margin-top: 180px;
@@ -375,12 +376,12 @@
 
 
 /* Footer Styling*/
-  .footer {
+  div.footer {
     background-color: #37454E;
     padding: 10px 10px 10px 10px;
   }
   .footer p, .footer a {
-    color: #615D70;
+    color: #8D889E;
     font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
@@ -396,7 +397,8 @@
   margin-top: 85px; 
 }
 .main-first-slide {
-  background: url(../imgs/bay%20bridge.jpg) no-repeat center center;
+  background: url(../imgs/bay-bridge.jpg) no-repeat center center;
+  background-size: cover;
 }
 .main-second-slide {
   background: url(../imgs/comcast%20tower.jpg ) no-repeat center center;
@@ -616,7 +618,7 @@ button:focus {
   background-color: #C3C3C3;
   padding-left: 320px;
   padding-right: 320px;
-  padding-bottom: 80px;
+  padding-bottom: 90px;
   padding-top: 80px;
 }
 #benefits-page-content {
@@ -732,3 +734,16 @@ button:focus {
   font-weight: 600;
   margin-top: 160px;
 }
+
+<!------------------------------------------------------------------------
+|                                                                        |
+|                       Designed at mariner media                        |
+|                                                                        |
+|                                                                        |
+|                             visit our site                             |
+|                                                                        |
+|                                                                        |
+|                            marinermedia.com                            |
+|                                                                        |
+|                                                                        |
+------------------------------------------------------------------------->
