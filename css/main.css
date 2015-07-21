@@ -224,7 +224,7 @@
   #main-caption p {
     color: #fff;
     font-size: 18px;
-    margin-top: 10px;
+    margin-top: 8px;
     padding-left: 20px;
   }
 
@@ -297,7 +297,7 @@
     height: 348px;
     z-index: -999;
     position: absolute;
-    margin-top: -22px;
+    margin-top: -12px;
   }
   #second-third-img {
     background: url(../imgs/kenlite.jpg) no-repeat center center;
@@ -397,14 +397,16 @@
   margin-top: 85px; 
 }
 .main-first-slide {
-  background: url(../imgs/bay-bridge.jpg) no-repeat center center;
+  background: url(../imgs/ches-bay-bridge.jpg) no-repeat center center;
   background-size: cover;
 }
 .main-second-slide {
   background: url(../imgs/comcast%20tower.jpg ) no-repeat center center;
+  background-size: cover;
 }
 .main-third-slide {
-  background: url(../imgs/lincoln_center.jpg) no-repeat center center;
+  background: url(../imgs/Lincoln_Center_Main.jpg) no-repeat center center;
+  background-size: cover;
 }
 .slide-content {
   text-align: -webkit-center;
@@ -416,6 +418,29 @@
 }
 .mobile-menu {
   display: none; 
+}
+@media screen and (max-width: 1035px) {
+  #half-caption p {
+    display: none; 
+  }
+  .half {
+    width: 46% !important;
+    margin-left: 1%;
+    margin-right: 1%; 
+  }
+  
+}
+@media screen and (max-width: 1024px) {
+  .third {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #first-third-img,
+  #second-third-img,
+  #third-third-img {
+    width: 75%; 
+    background-size: cover;
+  }
 }
 @media screen and (max-width: 955px) {
     .nav-container {
@@ -457,7 +482,7 @@
       width: 34.5% !important;
     }
     .footer {
-      margin-top: 750px; 
+      margin-top: 250px; 
     }
 }
 @media screen and (max-width: 700px) {
@@ -476,6 +501,9 @@
     #third-fourth-img,
     #fourth-fourth-img {
       width: 75% !important;
+    }
+    .footer {
+      margin-top: 750px; 
     }
 }
 .prod-first-slide {
@@ -634,14 +662,14 @@ button:focus {
 #benefits-two {
   background: url(../imgs/bay-bridge-1.jpg) no-repeat center center fixed;
   background-size: cover;
-  padding-left: 690px;
-  padding-right: 200px;
+  padding-left: 60%;
+  padding-right: 10%;
   padding-bottom: 140px;
   padding-top: 80px;
 }
 #benefits-three {
   background-color: #F1F2F1;
-  padding-left: 750px;
+  padding-left: 70%;
   padding-right: 10%;
   padding-bottom: 120px;
   padding-top: 80px;
@@ -734,7 +762,13 @@ button:focus {
   font-weight: 600;
   margin-top: 160px;
 }
-
+.hiddentotal {
+  display: none; 
+}
+div#calc-total {
+  margin-top: 40px;
+  margin-left: 110px;
+}
 <!------------------------------------------------------------------------
 |                                                                        |
 |                       Designed at mariner media                        |
