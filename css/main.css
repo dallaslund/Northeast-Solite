@@ -733,3 +733,10 @@ button:focus {
   font-weight: 600;
   margin-top: 160px;
 }
+
+.hidden-calc-label {
+  display: none; 
+}
+.button-before-click {
+  margin-left: 50px; 
+}

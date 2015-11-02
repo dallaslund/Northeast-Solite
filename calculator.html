@@ -82,12 +82,10 @@
                 </select>
             </div>
             <div class="calc-group">
-              <label class="calc-label" for="total">Cubic Yards:</label>
+              <label class="calc-label hidden-calc-label" id="total-calced" for="total">Cubic Yards:</label>
               <div class="cyards-div"></div>
             </div>
-            <div>
-                <input class="down-button" type="button" id="submitButton" value="Submit"></input>
-            </div>
+            <input class="down-button button-before-click" type="button" id="submitButton" value="Submit"></input>
                 <div id="calc-total" class="hiddentotal">
               <p>Total: ???</p>
             </div>
@@ -103,7 +101,9 @@
     $('input#submitButton').click(function () {
         'use strict';
         $('#submitButton').removeClass("down-button");
+        $('#submitButton').removeClass("button-before-click");
         $('#calc-total').removeClass("hiddentotal");
+        $('#total-calced').removeClass("hidden-calc-label");
         var typeprice;
         var width = $('#number-width').val();
         var length = $('#number-length').val();
