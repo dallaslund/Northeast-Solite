@@ -85,7 +85,9 @@
               <label class="calc-label" for="total">Cubic Yards:</label>
               <div class="cyards-div"></div>
             </div>
+            <div>
                 <input class="down-button" type="button" id="submitButton" value="Submit"></input>
+            </div>
                 <div id="calc-total" class="hiddentotal">
               <p>Total: ???</p>
             </div>
@@ -107,7 +109,7 @@
         var length = $('#number-length').val();
         var depth = $('#number-depth').val();
         var type = $('#type').val();
-        if($('#ct').val() == 'type1'){ 
+        if($('#ct').val() == 'type1'){
           typeprice = 1;
         } else if($('#ct').val() == 'type2'){
           typeprice = 2;
