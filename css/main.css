@@ -575,7 +575,6 @@
   clear: both;
 }
 input#submitButton {
-  /*float: left;*/
   height: 27px;
   border: 1px solid #CCC;
   border-radius: 4px;
