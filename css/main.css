@@ -735,8 +735,8 @@ button:focus {
 }
 
 .hidden-calc-label {
-  display: none; 
+  display: none !important; 
 }
 .button-before-click {
-  margin-left: 50px; 
+  margin-left: 50px !important; 
 }
